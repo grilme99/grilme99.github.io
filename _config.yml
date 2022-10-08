@@ -101,7 +101,7 @@ comments:
     repo_id: R_kgDOHdYWRg
     category: General
     category_id: DIC_kwDOHdYWRs4CR34D
-    mapping: title         # optional, default to 'pathname'
+    mapping: pathname         # optional, default to 'pathname'
     input_position: top  # optional, default to 'bottom'
     lang: en            # optional, default to the value of `site.lang`
 
