@@ -21,7 +21,7 @@ timezone: Europe/London
 # jekyll-seo-tag settings › https://github.com/jekyll/jekyll-seo-tag/blob/master/docs/usage.md
 # ↓ --------------------------
 
-title: Brooke                      # the main title
+title: Brooke Rhodes                     # the main title
 
 tagline: >-
   Software engineer working on games, systems, and tools. Worked on games totalling 6B+ play sessions and 20M+ MAU.
@@ -81,7 +81,7 @@ theme_mode: # [dark|light]
 img_cdn: https://github.com/grilme99/grilme99.github.io/raw/main
 
 # the avatar on sidebar, support local or CORS resources
-avatar: "/assets/avatar.jpg"
+avatar: "/assets/img/avatar.jpg"
 
 # boolean type, the global switch for ToC in posts.
 toc: true
