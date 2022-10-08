@@ -23,10 +23,11 @@ timezone: Europe/London
 
 title: Brooke                      # the main title
 
-tagline: Lover of all things typed and rusty 🦀
+tagline: >-
+  Software engineer working on games, systems, and tools. Worked on games totalling 6B+ play sessions and 20M+ MAU.
 
 description: >-                        # used by seo meta and the atom feed
-  Engineer @ Easy Games, creating tools and systems for Roblox
+  Software engineer working on games, systems, and tools. Worked on games totalling 6B+ play sessions and 20M+ MAU.
 
 # fill in the protocol & hostname for your site, e.g., 'https://username.github.io'
 url: 'https://brooke.fyi'
@@ -53,7 +54,7 @@ google_site_verification:               # fill in to your verification string
 # The end of `jekyll-seo-tag` settings
 
 google_analytics:
-  id:                 # fill in your Google Analytics ID
+  id: G-X2BTMY1TLL     # fill in your Google Analytics ID
   # Google Analytics pageviews report settings
   pv:
     proxy_endpoint:   # fill in the Google Analytics superProxy endpoint of Google App Engine
@@ -77,10 +78,10 @@ theme_mode: # [dark|light]
 # will be added to all image (site avatar & posts' images) paths starting with '/'
 #
 # e.g. 'https://cdn.com'
-img_cdn:
+img_cdn: https://raw.githubusercontent.com/grilme99/grilme99.github.io
 
 # the avatar on sidebar, support local or CORS resources
-avatar: "https://pbs.twimg.com/profile_images/1501748276076425218/lU0CDkFa_400x400.jpg"
+avatar: "/assets/avatar.jpg"
 
 # boolean type, the global switch for ToC in posts.
 toc: true
