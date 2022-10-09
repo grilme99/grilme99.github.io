@@ -11,7 +11,6 @@ image:
 ---
 
 ![PlayFab + Roblox Logo](/assets/img/post/playfab-sdk.jpg)
-_PlayFab and Roblox Studio logos together over PlayFab's signature blue background._
 
 Over the past few weeks, I have been working on a complete rewrite of my [Microsoft PlayFab](https://playfab.com) integration for Roblox. This rewrite brings some key new features and significant housekeeping to better support community contributions.
 
