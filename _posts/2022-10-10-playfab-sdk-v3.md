@@ -14,6 +14,8 @@ image:
 
 Over the past few weeks, I have been working on a complete rewrite of my [Microsoft PlayFab](https://playfab.com) integration for Roblox. This rewrite brings some key new features and significant housekeeping to better support community contributions.
 
+You can find the SDK [here](https://github.com/grilme99/RobloxPlayFabSDK).
+
 ## Firstly, what is PlayFab?
 Quoted from PlayFab themselves:
 > PlayFab is a complete backend platform for live games with managed game services, real-time analytics, and LiveOps.
