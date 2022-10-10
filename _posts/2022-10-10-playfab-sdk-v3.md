@@ -37,19 +37,19 @@ If you're interested in seeing a production-ready implementation of PlayFab's ma
 
 Read more about PlayFab's matchmaking [here](https://learn.microsoft.com/en-us/gaming/playfab/features/multiplayer/matchmaking/).
 
-## Why the rewrite?
-In preparation for future projects I want to take on, I needed to get the SDK into a more usable state with Luau. While the SDK came bundled with type annotations for roblox-ts, it pre-dated Luau, and thus people who used it with Luau didn't have proper access to API types or errors from the type checker. Additionally, it had the following other problems which helped to justify a complete rewrite:
-
-- The SDK was *big*. PlayFab has thousands of individual APIs, each with its own type annotations for [roblox-ts](https://roblox-ts.com). These APIs added up to a lot of code, which has an excellent opportunity to be split up. I would need to work out how to make individual parts of the SDK opt-in before I could consider including Luau types.
-- It's hard to use PlayFab's official generator and even harder to contribute to it. If I wanted to support community contributions to my PlayFab SDK, I would have to maintain my own fork of PlayFab's official generator, which would have been much more work than it was worth. Looking at PlayFab's [official generator](https://github.com/PlayFab/SDKGenerator), it is cumbersome to navigate and even more difficult to edit or use. Codegen is driven by EJS templates, which have to be styled in a particular, hard-to-maintain way to get the desired output. Ultimately, I decided to run the generator periodically on my local machine and not bother with community contributions. I want to change that this time around.
-
 Anyway, back to the SDK...
+
+## Why the rewrite?
+In preparation for future projects I want to take on, I needed to get the SDK into a more usable state with Luau. While the SDK came bundled with type annotations for [roblox-ts](https://roblox-ts.com), it pre-dated Luau, and thus people who used it with Luau didn't have proper access to API types or errors from the type checker. Additionally, it had the following other problems which helped to justify a complete rewrite:
+
+- The SDK was *big*. PlayFab has thousands of individual APIs, each with its own type annotations for roblox-ts. These APIs added up to a lot of code, which has an excellent opportunity to be split up. I would need to work out how to make individual parts of the SDK opt-in before I could consider including Luau types.
+- It's hard to use PlayFab's official generator and even harder to contribute to it. If I wanted to support community contributions to my PlayFab SDK, I would have to maintain my own fork of PlayFab's official generator, which would have been much more work than it was worth. Looking at PlayFab's [official generator](https://github.com/PlayFab/SDKGenerator), it is cumbersome to navigate and even more difficult to edit or use. Codegen is driven by EJS templates, which have to be styled in a particular, hard-to-maintain way to get the desired output. Ultimately, I decided to run the generator periodically on my local machine and not bother with community contributions. I want to change that this time around.
 
 ## What's changed?
 A few things! In addition to some general ergonomics improvements, all of the problems bought up above have also been addressed:
 
 ### Luau types! 🎉
-My biggest goal for the rewrite of the PlayFab SDK was to have static typing for the *entire* PlayFab API right inside Luau. I'm pleased to say that, as of V3, the request parameters and responses of every PlayFab API are available, and you'll receive type-checking errors when you do something wrong. Additionally, this SDK version no longer uses the [Promise](https://eryn.io/roblox-lua-promise/) library, meaning Luau will preserve all type information.
+My biggest goal for the rewrite of the PlayFab SDK was to have static typing for the *entire* PlayFab API right inside Luau. I'm pleased to say that, as of V3, the request parameters and responses of every PlayFab API are available, and you'll receive type-checking errors when you do something wrong. Additionally, this SDK version no longer uses the [Promise](https://eryn.io/roblox-lua-promise/) library, meaning Luau will preserve all type information on function returns.
 
 ![Luau catching type errors](/assets/img/post/playfab-luau-types.png)
 _Screenshot of Luau code missing a required request parameter and the error given by the Luau type-checker._
@@ -80,10 +80,10 @@ To put it bluntly, the error handling in this SDK kind of sucks. Error handling 
 
 
 ### Better Accessibility
-As I mentioned earlier in the post, this SDK currently requires Wally to use it as intended. However, Wally is only available to those using Rojo. I feel this is a bit of an injustice to those natively using Studio, and I want to bring the huge dependency management benefits to them. More soon!
+As I mentioned earlier in the post, this SDK currently requires Wally to install and use it as intended. However, Wally is only available to those using Rojo. In one of my future projects, I want to bring Wally to studio users so they can access the benefits of a real package manager. More on this soon!
 
 ### More Open-Source!
 Open-source is great, and I want to keep creating open-source tools, libraries, and integrations for other developers. From now on, I will seriously consider releasing things to the community whenever I make something for myself. The only time this won't happen is if it's something I feel I can't maintain long-term or if there is some security, business-related, or legal reason not to.
 
 ## Closing Remarks
-This blog post is my first time writing this kind of long-form content, and I think it works rather nicely. Please give me feedback on whether this kind of content is interesting or helpful, as well as on my writing style -- if it's too long, short, vague, or I keep going on. I want to improve it!
+This blog post is my first time writing this kind of long-form content, and I think it works rather nicely. Please give me feedback on whether this kind of content is interesting or helpful, as well as on my writing style -- if it's too long, short, vague, or if I keep rambling on. I want to improve!
