@@ -10,8 +10,6 @@ image:
   alt: PlayFab and Roblox Studio logos on top of a navy blue background.
 ---
 
-![PlayFab + Roblox Logo](/assets/img/post/playfab-sdk.jpg)
-
 Over the past few weeks, I have been working on a complete rewrite of my [Microsoft PlayFab](https://playfab.com) integration for Roblox. This rewrite brings some key new features and significant housekeeping to better support community contributions.
 
 You can find the SDK [here](https://github.com/grilme99/RobloxPlayFabSDK).
