@@ -155,6 +155,6 @@ fn drive_camera(
 }   
 ```
 
-## Part Three
+# Part Three
 
 The final part of this mini-series, Part Three, will cover the physics and ball controller implementations. We'll explore how it was implemented and how it could be improved.
