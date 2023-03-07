@@ -45,6 +45,7 @@ social:
   email: brooke@gril.me             # change to your email address
   links:
     # The first element serves as the copyright owner's link
+    - https://brooke.sh
     - https://twitter.com/grilme99      # change to your twitter homepage
     - https://github.com/grilme99       # change to your github homepage
 
