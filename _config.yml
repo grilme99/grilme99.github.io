@@ -24,10 +24,10 @@ timezone: Europe/London
 title: Brooke Rhodes                     # the main title
 
 tagline: >-
-  Software engineer working on games, systems, and tools. Worked on games totalling 6B+ play sessions and 20M+ MAU.
+  Software engineer and bit twiddler. I write about my projects and experiences to help others grow.
 
 description: >-                        # used by seo meta and the atom feed
-  Software engineer working on games, systems, and tools. Worked on games totalling 6B+ play sessions and 20M+ MAU.
+  Software engineer and bit twiddler. I write about my projects and experiences to help others grow.
 
 # fill in the protocol & hostname for your site, e.g., 'https://username.github.io'
 url: 'https://brooke.fyi'
