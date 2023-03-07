@@ -1,6 +1,6 @@
 ---
 title: "Rust and Bevy Engine: One-Button GameJam (Part Two)"
-date: 2023-01-20
+date: 2023-01-26
 categories: [University]
 tags: [university, gamejam, rust]
 image:
@@ -75,6 +75,8 @@ Another core component of any game is its camera controller, and our little golf
 The camera system builds off of commands, utilising `mouse_delta` to drive camera rotation around the golf ball. In addition, it uses the command structs `camera_zoom` to drive the zoom in/out logic.
 
 Zooming the camera in and out took much tuning to get right. In addition to adjusting the camera's distance to the golf ball, the camera's vertical *height* is also adjusted based on how far the camera is zoomed out. This effect is implemented with various easings, allowing players to view their surroundings more intuitively.
+
+<video src="/assets/video/one-button-jam-camera-demo.mp4" controls style="max-width: 100%"></video>
 
 ![](/assets/video/one-button-jam-camera-demo.mp4)
 _Camera controller demonstration, showcasing panning and zooming in/out behavior_
