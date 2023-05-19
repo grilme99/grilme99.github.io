@@ -1,7 +1,7 @@
 ---
 title: "Springs for Animation in Unity"
 date: 2023-03-24
-categories: [University]
+categories: [University, Devblog]
 tags: [university, c#, unity]
 image:
   path: /assets/img/post/springs-thumbnail.webp

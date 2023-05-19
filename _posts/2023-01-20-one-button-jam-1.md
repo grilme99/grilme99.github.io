@@ -1,7 +1,7 @@
 ---
 title: "Rust and Bevy Engine: One-Button GameJam (Part One)"
 date: 2023-01-20
-categories: [University]
+categories: [University, Devblog]
 tags: [university, gamejam, rust]
 image:
   path: /assets/img/post/one-button-jam-header.png
